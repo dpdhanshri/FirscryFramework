@@ -36,6 +36,7 @@ public class LoginToApp extends LoginLocators
 	{
 		WebDriverUtils.loadBrowser();
 		WebDriverUtils.openApplication(URL);
+		System.out.println();
 
 	}
 
