@@ -7,10 +7,10 @@ import common.PopUpCommonHandle;
 public class LoginLocators extends PopUpCommonHandle
 {
 	
-	static By Login = By.xpath("//span[@class='poplogin_main poplogin']");
-	static By Email = By.xpath("//input[@id='txtLUNm']");
-	static By pass = By.xpath("//input[@id='txtLPass']");
-	static By LoginButton = By.xpath("//input[@id='btnlogon']");
+	protected static By Login = By.xpath("//span[@class='poplogin_main poplogin']");
+	protected static By Email = By.xpath("//input[@id='txtLUNm']");
+	protected static By pass = By.xpath("//input[@id='txtLPass']");
+	protected static By LoginButton = By.xpath("//input[@id='btnlogon']");
 			
 
 }
