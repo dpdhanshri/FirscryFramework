@@ -1,0 +1,48 @@
+package common;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+//this file will read username & password from the text file 
+
+public class ReadData 
+
+{
+	public static  String MyUser = null;
+	public static  String pass = null;
+	private static String file = "C://Dhan-Code/FirstCryCredentials.txt";
+	
+	public static void readFromTextFile()
+	{
+		try
+		{
+			Path path = Paths.get(file);
+			/*byte b [] = Files.readAllBytes(path);
+			for (int i =0; i< b.length ;i ++)
+			{
+				System.out.println(b[i]);
+			}*/
+			List <String> list = Files.readAllLines(path,StandardCharsets.UTF_8);
+//			for (String line : list)  //line is string class object which hold value from list refernce
+//			{
+				MyUser = list.get(0);
+				System.out.println(MyUser);
+				pass = list.get(1);;
+//				System.out.println(pass);
+			//}
+		}
+
+		catch (IOException e)
+		{
+			System.out.println(e);
+		}
+	}
+
+
+}

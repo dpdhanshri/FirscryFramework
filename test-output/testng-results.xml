@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="74015" started-at="2018-12-16T06:59:24Z" finished-at="2018-12-16T07:00:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="74015" started-at="2018-12-16T06:59:24Z" finished-at="2018-12-16T07:00:38Z">
+      <class name="LoginModule.LoginToApp">
+        <test-method status="PASS" signature="setup()[pri:0, instance:LoginModule.LoginToApp@73846619]" name="setup" is-config="true" duration-ms="47757" started-at="2018-12-16T12:29:24Z" finished-at="2018-12-16T12:30:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validlogin()[pri:0, instance:LoginModule.LoginToApp@73846619]" name="validlogin" duration-ms="20967" started-at="2018-12-16T12:30:12Z" finished-at="2018-12-16T12:30:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validlogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:LoginModule.LoginToApp@73846619]" name="tearDown" is-config="true" duration-ms="5184" started-at="2018-12-16T12:30:33Z" finished-at="2018-12-16T12:30:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- LoginModule.LoginToApp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
