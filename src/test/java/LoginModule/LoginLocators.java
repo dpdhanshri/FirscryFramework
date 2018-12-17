@@ -12,6 +12,8 @@ public class LoginLocators extends PopUpCommonHandle
 	protected static By pass = By.xpath("//input[@id='txtLPass']");
 	protected static By LoginButton = By.xpath("//input[@id='btnlogon']");
 			
-
+   //search module locators
+	protected static By Search = By.xpath("//input[@class ='input-text']");
+	protected static By SearchIcon = By.xpath("//img[@class ='search-button']");
 }
 

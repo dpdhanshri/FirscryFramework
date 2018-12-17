@@ -18,9 +18,7 @@ public class LoginToApp extends LoginLocators
 
 	public void login(String userName, String password)
 	{
-		//popupHandle();
-
-		click(By.xpath("//div[@class='_pop_close _pop_reg_bg']"));
+		popupHandle();		
 		click(LoginLocators.Login);
 		pause(2000);
 		typeText(LoginLocators.Email,userName);
@@ -36,7 +34,9 @@ public class LoginToApp extends LoginLocators
 
 	{
 		WebDriverUtils.loadBrowser();
+		pause(3000);
 		WebDriverUtils.openApplication(URL);
+		
 	}
 
 	//*@Test
@@ -50,11 +50,11 @@ public class LoginToApp extends LoginLocators
 	@Test
 	public void validlogin()
 	{
-		ReadData.readFromTextFile();
+		ReadData.readCredentials();
 		login(ReadData.MyUser,ReadData.pass);
 	}
 
-	@AfterClass
+	//@AfterClass
 	public void tearDown() 
 	{
 		closeBrowser();

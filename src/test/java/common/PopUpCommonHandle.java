@@ -8,7 +8,7 @@ public class PopUpCommonHandle extends WebDriverUtils
 
 	public void popupHandle() 
 	{
-		click(By.xpath("//div[@class='lctr liquid_header_main']"));
+		click(By.xpath("//div[@class='_pop_close _pop_reg_bg']"));
 	}
 }
 

@@ -16,9 +16,11 @@ public class ReadData
 {
 	public static  String MyUser = null;
 	public static  String pass = null;
-	private static String file = "C://Dhan-Code/FirstCryCredentials.txt";
-	
-	public static void readFromTextFile()
+	static String file = "C://Dhan-Code/FirstCryCredentials.txt";
+	private static String ItemFile = "C://Dhan-Code/SearchItem.txt";
+	public static  String Item1 = null;
+	public static  String Item2 = null;
+	public static void readCredentials()
 	{
 		try
 		{
@@ -29,15 +31,31 @@ public class ReadData
 				System.out.println(b[i]);
 			}*/
 			List <String> list = Files.readAllLines(path,StandardCharsets.UTF_8);
-//			for (String line : list)  //line is string class object which hold value from list refernce
-//			{
-				MyUser = list.get(0);
-				System.out.println(MyUser);
-				pass = list.get(1);;
-//				System.out.println(pass);
+			//			for (String line : list)  //line is string class object which hold value from list refernce
+			//			{
+			MyUser = list.get(0);
+			System.out.println(MyUser);
+			pass = list.get(1);
+			System.out.println(pass);
 			//}
 		}
 
+		catch (IOException e)
+		{
+			System.out.println(e);
+		}
+	}
+
+	//below method will read items from your text file
+	public static void readItem()
+	{
+		try
+		{
+			Path ItemPath = Paths.get(ItemFile);
+			List <String> listItem = Files.readAllLines(ItemPath,StandardCharsets.UTF_8);
+			Item1 = listItem.get(0);
+			Item2 = listItem.get(1);
+		}
 		catch (IOException e)
 		{
 			System.out.println(e);
