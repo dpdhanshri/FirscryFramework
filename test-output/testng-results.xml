@@ -2,24 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="74015" started-at="2018-12-16T06:59:24Z" finished-at="2018-12-16T07:00:38Z">
+  <suite name="Default suite" duration-ms="130007" started-at="2018-12-17T08:35:38Z" finished-at="2018-12-17T08:37:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="74015" started-at="2018-12-16T06:59:24Z" finished-at="2018-12-16T07:00:38Z">
-      <class name="LoginModule.LoginToApp">
-        <test-method status="PASS" signature="setup()[pri:0, instance:LoginModule.LoginToApp@73846619]" name="setup" is-config="true" duration-ms="47757" started-at="2018-12-16T12:29:24Z" finished-at="2018-12-16T12:30:12Z">
+    <test name="Default test" duration-ms="130007" started-at="2018-12-17T08:35:38Z" finished-at="2018-12-17T08:37:48Z">
+      <class name="LoginTest.LoginToApp">
+        <test-method status="PASS" signature="setup()[pri:0, instance:LoginTest.LoginToApp@3159c4b8]" name="setup" is-config="true" duration-ms="122499" started-at="2018-12-17T14:05:38Z" finished-at="2018-12-17T14:07:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validlogin()[pri:0, instance:LoginModule.LoginToApp@73846619]" name="validlogin" duration-ms="20967" started-at="2018-12-16T12:30:12Z" finished-at="2018-12-16T12:30:33Z">
+        <test-method status="PASS" signature="validlogin()[pri:0, instance:LoginTest.LoginToApp@3159c4b8]" name="validlogin" duration-ms="7452" started-at="2018-12-17T14:07:40Z" finished-at="2018-12-17T14:07:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validlogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:LoginModule.LoginToApp@73846619]" name="tearDown" is-config="true" duration-ms="5184" started-at="2018-12-16T12:30:33Z" finished-at="2018-12-16T12:30:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- LoginModule.LoginToApp -->
+      </class> <!-- LoginTest.LoginToApp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
