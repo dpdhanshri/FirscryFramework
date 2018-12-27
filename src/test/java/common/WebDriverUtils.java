@@ -1,7 +1,6 @@
 
 package common;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -9,8 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-
-import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 //declaration of all webdriver common methods
 public class WebDriverUtils
@@ -23,21 +22,32 @@ public class WebDriverUtils
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
-		
+
+
 	}
 
 	public static void openApplication(String URL)
 	{
 		driver.get(URL);
 	}
-	public static WebElement getElement(By locator) {
+	public static WebElement getElement(By locator)
+	{
+		long timeout = 0;
+		final WebDriverWait wait = new WebDriverWait(driver, timeout);
+		wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(locator)));
+		
 		return driver.findElement(locator);
 	}
-	
-	public static void click(By locator) {
+
+	public static void click(By locator)
+	{
+		long timeout = 0;
+		final WebDriverWait wait = new WebDriverWait(driver, timeout);
+		wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(locator)));
+		
 		getElement(locator).click();
 	}
-	
+
 	public static String getText(By locator) {
 		return getElement(locator).getText();
 	}
@@ -48,7 +58,7 @@ public class WebDriverUtils
 
 	protected void pause(int i) {
 		// TODO Auto-generated method stub
-		
+
 	}  
 	protected String getInvalidLoginMessage() {
 		// TODO Auto-generated method stub
