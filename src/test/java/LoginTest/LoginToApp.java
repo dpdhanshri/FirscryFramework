@@ -20,7 +20,7 @@ public class LoginToApp extends LoginLocators
 		WebDriverUtils.loadBrowser();
 		pause(1000);
 		WebDriverUtils.openApplication(URL);
-		//pause(1000);
+		pause(1000);
 		popupHandle();	
 	}
 
