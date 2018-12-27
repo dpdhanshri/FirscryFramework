@@ -35,7 +35,7 @@ public class LoginToApp extends LoginLocators
 		click(LoginLocators.LoginButton);
 
 	}
-	@Test
+	@Test(priority =0)
 	public void validlogin()
 	{
 		ReadData.readCredentials();
