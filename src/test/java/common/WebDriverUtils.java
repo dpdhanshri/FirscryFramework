@@ -22,8 +22,6 @@ public class WebDriverUtils
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
-
-
 	}
 
 	public static void openApplication(String URL)
@@ -35,17 +33,18 @@ public class WebDriverUtils
 		long timeout = 0;
 		final WebDriverWait wait = new WebDriverWait(driver, timeout);
 		wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(locator)));
-		
 		return driver.findElement(locator);
 	}
+
 
 	public static void click(By locator)
 	{
 		long timeout = 0;
 		final WebDriverWait wait = new WebDriverWait(driver, timeout);
 		wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(locator)));
-		
+
 		getElement(locator).click();
+
 	}
 
 	public static String getText(By locator) {
