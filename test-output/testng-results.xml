@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="130007" started-at="2018-12-17T08:35:38Z" finished-at="2018-12-17T08:37:48Z">
+  <suite name="Default suite" duration-ms="37750" started-at="2018-12-27T02:36:31Z" finished-at="2018-12-27T02:37:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="130007" started-at="2018-12-17T08:35:38Z" finished-at="2018-12-17T08:37:48Z">
+    <test name="Default test" duration-ms="37750" started-at="2018-12-27T02:36:31Z" finished-at="2018-12-27T02:37:09Z">
       <class name="LoginTest.LoginToApp">
-        <test-method status="PASS" signature="setup()[pri:0, instance:LoginTest.LoginToApp@3159c4b8]" name="setup" is-config="true" duration-ms="122499" started-at="2018-12-17T14:05:38Z" finished-at="2018-12-17T14:07:40Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:LoginTest.LoginToApp@3159c4b8]" name="setup" is-config="true" duration-ms="27444" started-at="2018-12-27T08:06:31Z" finished-at="2018-12-27T08:06:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validlogin()[pri:0, instance:LoginTest.LoginToApp@3159c4b8]" name="validlogin" duration-ms="7452" started-at="2018-12-17T14:07:40Z" finished-at="2018-12-17T14:07:48Z">
+        <test-method status="PASS" signature="validlogin()[pri:0, instance:LoginTest.LoginToApp@3159c4b8]" name="validlogin" duration-ms="10210" started-at="2018-12-27T08:06:59Z" finished-at="2018-12-27T08:07:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validlogin -->
