@@ -41,6 +41,7 @@ public class LoginToApp extends LoginLocators
 		ReadData.readCredentials();
 		pause(1000);
 		login(ReadData.MyUser,ReadData.pass);
+		pause(1000);
 	}
 
 	//*@Test
