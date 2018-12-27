@@ -9,13 +9,15 @@ public class SearchItem extends SearchLocators
 
 {
 	@Test(priority =1)
-	public void SearchMyItem()
+	public void SearchMyItem() throws InterruptedException
 	{
 		click(SearchLocators.Search);
 		typeText(SearchLocators.Search, ReadData.Item1);
 		pause(1000);
 		click(SearchLocators.SearchIcon);
+		Thread.sleep(10000);
 		click(SearchLocators.sortOption);
+		Thread.sleep(20000);
 		click(SearchLocators.Mychoice);
 	}
 }
