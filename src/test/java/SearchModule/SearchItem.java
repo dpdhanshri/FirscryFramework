@@ -11,6 +11,7 @@ public class SearchItem extends SearchLocators
 	@Test(priority =1)
 	public void SearchMyItem() throws InterruptedException
 	{
+		pause(1000);
 		click(SearchLocators.Search);
 		typeText(SearchLocators.Search, ReadData.Item1);
 		pause(1000);
