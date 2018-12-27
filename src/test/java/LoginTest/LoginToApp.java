@@ -18,9 +18,9 @@ public class LoginToApp extends LoginLocators
 	public void setup()
 	{
 		WebDriverUtils.loadBrowser();
-		pause(2000);
-		WebDriverUtils.openApplication(URL);
 		pause(1000);
+		WebDriverUtils.openApplication(URL);
+		//pause(1000);
 		popupHandle();	
 	}
 
@@ -31,11 +31,11 @@ public class LoginToApp extends LoginLocators
 		typeText(LoginLocators.Email,userName);
 		typeText(LoginLocators.pass,password);
 		pause(1000);
-		mouseMove();
+		//mouseMove();
 		click(LoginLocators.LoginButton);
 
 	}
-	@Test(priority =0)
+	@Test
 	public void validlogin()
 	{
 		ReadData.readCredentials();
