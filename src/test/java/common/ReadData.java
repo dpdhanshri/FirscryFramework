@@ -16,8 +16,8 @@ public class ReadData
 {
 	public static  String MyUser = null;
 	public static  String pass = null;
-	static String file = "C://Dhan-Code/FirstCryCredentials.txt";
-	private static String ItemFile = "C://Dhan-Code/SearchItem.txt";
+	static String file = "D:/Dhan-Selenium/MySelCode/FirstCryCredentials.txt";
+	private static String ItemFile = "D:/Dhan-Selenium/MySelCode/SearchItem.txt";
 	public static  String Item1 = null;
 	public static  String Item2 = null;
 	public static void readCredentials()
