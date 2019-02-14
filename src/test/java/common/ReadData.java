@@ -16,8 +16,8 @@ public class ReadData
 {
 	public static  String MyUser = null;
 	public static  String pass = null;
-	static String file = "D:/Dhan-Selenium/MySelCode/FirstCryCredentials.txt";
-	private static String ItemFile = "D:/Dhan-Selenium/MySelCode/SearchItem.txt";
+	static String file = "D:/Dhan-Selenium/MySelCode/FrameworkFirstcry/FirstCryCredentials.txt";
+	private static String ItemFile = "D:/Dhan-Selenium/MySelCode/FrameworkFirstcry/SearchItem.txt";
 	public static  String Item1 = null;
 	public static  String Item2 = null;
 	public static void readCredentials()
@@ -53,6 +53,11 @@ public class ReadData
 		{
 			Path ItemPath = Paths.get(ItemFile);
 			List <String> listItem = Files.readAllLines(ItemPath,StandardCharsets.UTF_8);
+			/*while(listItem!=null)
+			{
+				String Item = listItem.get(0);
+				
+			}*/
 			Item1 = listItem.get(0);
 			Item2 = listItem.get(1);
 		}
